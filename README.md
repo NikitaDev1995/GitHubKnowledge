@@ -21,3 +21,5 @@ staged    -- "???"     --> tracked/commited;
 A -- "text" -->B
 ```
 
+git commit --amend --no-edit - позволяет дополнить последний коммит не изменяя описание коммита
+
