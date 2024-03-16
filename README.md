@@ -21,9 +21,19 @@ staged    -- "???"     --> tracked/commited;
 A -- "text" -->B
 ```
 
-<<<<<<< HEAD
-git commit --amend --no-edit - позволяет дополнить последний коммит ФАЙЛОМ не изменяя описание коммита (работает только с последним коммитом)
-=======
-git commit --amend --no-edit - позволяет дополнить последний коммит не изменяя описание коммита
->>>>>>> 40f83ab48963b858ca1181ef5b1f9711541ae070
+git commit --amend --no-edit - позволяет дополнить последний коммит ФАЙЛОМ не изменяя описание коммита (При этом сам файл не должен быть запушен)
+
+Пример
+
+```
+touch File1.md && touch File2.md
+git add File1.md
+git commit -m "Some text"
+
+git add File2.md
+git commit --amend --no-edit
+```
+
+
+
 
