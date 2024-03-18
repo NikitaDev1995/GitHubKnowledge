@@ -34,6 +34,17 @@ git add File2.md
 git commit --amend --no-edit
 ```
 
+git commit --amend -m "New message" - позволяет изменить сообщение в коммите
+git restore --staged example.txt - команда, которая позволяет убрать файл из staging (после команды git add)
+
+```
+git add example.txt
+git restore --staged example.txt
+```
+git restore --staged . - сбрасывает все файлы из staging обратно в untracked/modified
+
+
+
 
 
 
