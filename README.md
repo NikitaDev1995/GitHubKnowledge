@@ -59,10 +59,6 @@ $ git status
 On branch main
 nothing to commit, working tree clean
 ```
-
-
-
-
-
-
+git diff - позволяет увидеть изменения файлов. Эта команда сравнит последнюю закоммиченную версию файла с текщей(измененной) версией. Работает команда в modified файлах
+git diff --staged - позволяет увидеть изменения в staged файлах
 
