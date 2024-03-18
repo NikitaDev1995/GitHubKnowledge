@@ -42,6 +42,24 @@ git add example.txt
 git restore --staged example.txt
 ```
 git restore --staged . - сбрасывает все файлы из staging обратно в untracked/modified
+git reset --hard <commit hash> - возвращает состояние репозитория к более раннему(все коммиты, файлы и код проекта которые были сделаны после коммита к которому мы вернулись удаляются безвозвратно!)
+git restore <file> - возвращает файл (который не попал ни в staging, ни в коммит) до последней версии, которая была сохранена через git commit или git add
+
+```
+# случайно изменили файл example.txt
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+          modified:   example.txt
+
+$ git restore example.txt
+$ git status
+On branch main
+nothing to commit, working tree clean
+```
+
 
 
 
